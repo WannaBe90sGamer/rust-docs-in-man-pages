@@ -1,0 +1,115 @@
+.\" Man-based Cheatsheet for Rust Programming Language
+.\" Send an issue on the github page to correct errors/tpos
+
+.TH Rust-Cheatsheet 7 "01 March 2025" "1.0" "Rust Programming Language Cheatsheet"
+
+.SH NAME
+Rust - Launguage Fundamentals
+
+.SH DESCRIPTION
+.B Created/1st Release
+.br
+Created		2006
+.br
+1st Release	May 2015
+.br
+
+.B Created By
+.br
+Graydon Hoare
+.br
+
+.B Comments
+.br
+// This is a comment
+.br
+
+Start a comment with '//'.
+.br
+
+.B Comments - Inline
+.br
+/* inline comment */
+.br
+
+A comment Embedded in a statement.
+.br
+
+Example:
+.br
+	let a /* Type determined by inference */ = 42.
+.br
+
+.B Comments - Multiline
+.br
+/*
+.br
+Multiline
+.br
+Comment
+.br
+*/
+.br
+
+Start a multiline comment with '/*'.
+.br
+End with '*/'.
+.br
+
+.B ### Doc Comments
+.br
+/// This is a doc comment.
+.br
+/// This doc comment
+.br
+/// adds content to the
+.br
+/// following function.
+.br
+fn documented_function() {
+.br
+	...
+.br
+}
+.br
+
+Doc comments are placed before the item being commented on.
+.br
+Use a triple forward slash (///) on each line.
+.br
+
+.B Doc Comments - Markdown Format
+.br
+/// # Heading 1
+.br
+/// ## Heading 2
+.br
+///
+.br
+/// In **bold** or __bold__
+.br
+/// In *italics* or _italics_
+.br
+/// In ~~strikethrough~~
+.br
+///
+.br
+/// [Link](https://speedsheet.io)
+.br
+
+Doc comments support CommonMark Markdown
+.br
+
+CommonMark:
+.br
+https://commonmark.org/help/
+
+.SH SEE ALSO
+Original Content (Requires Javascript):
+.br
+https://speedsheet.io/s/rust
+
+.SH AUTHOR
+Original Contents by Graydon Hoare
+.br
+Transcribed to Man pages by J.Leonard

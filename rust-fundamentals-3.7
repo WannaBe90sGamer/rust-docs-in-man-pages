@@ -1,0 +1,149 @@
+.\" Man-based Cheatsheet for Rust Programming Language
+.\" Send an issue on the github page to correct errors/tpos
+
+.TH Rust-Cheatsheet 7 "01 March 2025" "1.0" "Rust Programming Language Cheatsheet"
+
+.SH NAME
+Rust Fundamentals (Part 3)
+
+.SH SYNOPSIS
+.B Program Root File
+.br
+For Applications:
+.br
+	src/main.rs
+.br
+
+For Libraries:
+.br
+	src/lib.rs
+.br
+
+For Tests*:
+.br
+	tests/tests.rs
+.br
+
+* - not required to run tests in root tests directory
+.br
+
+.B Program Entry Point/Main Function
+.br
+Application File:
+.br
+	main.rs
+.br
+
+	fn main() {
+.br
+
+	}
+.br
+
+.B Program Test Entry Point/Main Function
+.br
+tests.ts
+.br
+
+Description:
+.br
+	Used to define utility functions for tests and to identify tests in sub folders.
+.br
+
+.B Program Directory Structure
+.br
+project_name/
+.br
+│
+.br
+├── .gitignore
+.br
+├── Cargo.toml
+.br
+├── Cargo.lock
+.br
+│
+.br
+├── .git/
+.br
+│
+.br
+├── src/
+.br
+│   ├── main.rs | lib.rs
+.br
+│   └── *.rs
+.br
+│
+.br
+├── tests/
+.br
+│   ├── tests.rs
+.br
+│   └── *.rs
+.br
+│
+.br
+└── target/
+.br
+    │
+.br
+    ├── doc/
+.br
+    │   └── current/
+.br
+    │       ├── index.html
+.br
+    │       └── *.html
+.br
+    │
+.br
+    ├── debug/
+.br
+    │   └── project_name
+.br
+    │
+.br
+    └── release/
+.br
+        └── project_name
+.br
+
+.B Statement Terminator
+.br
+statement;
+.br
+
+Description:
+.br
+	Terminate commands with a semicolon;
+.br
+
+Example:
+.br
+	println!("This statement is terminated with a semicolon.");
+.br
+
+.B Rust File Extension:
+.br
+filename.rs
+.br
+
+.B Runtime Data Types
+.br
+Description:
+.br
+	Rust does not store data types at runtime.
+.br
+
+	Rust does not need to know the data types at runtime as the compiler has ehaustively checked that everything is correct.
+
+.SH SEE ALSO
+Original Content (Requires Javascript):
+.br
+https://speedsheet.io/s/rust
+
+.SH AUTHOR
+Original Contents by Graydon Hoare
+.br
+Transcribed to Man pages by J.Leonard

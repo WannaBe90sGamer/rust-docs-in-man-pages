@@ -1,0 +1,141 @@
+.\" Man-based Cheatsheet for Rust Programming Language
+.\" Send an issue on the github page to correct errors/tpos
+
+.TH Rust-Cheatsheet 7 "01 March 2025" "1.0" "Rust Programming Language Cheatsheet"
+
+.SH NAME
+Rust Fundamentals (Part 2)
+
+.SH SYNOPSIS
+.B Block
+.br
+{
+.br
+	...
+.br
+}
+.br
+
+Description:
+.br
+	A block of code with it's own scope separate from the local scope.
+.br
+
+Example:
+.br
+	let a = 10;
+.br
+
+	{
+.br
+		let a = 5 + a;
+.br
+		println!("a = {}", a);
+.br
+	}
+.br
+
+	println!("a = {}", a);
+.br
+
+	// Prints:
+.br
+	//
+.br
+	//	a = 15
+.br
+	//	a = 10
+.br
+
+.B Block Expression
+.br
+= {
+.br
+	...
+.br
+	return_value
+.br
+}
+.br
+
+Description:
+.br
+	Defines a block that returns a value.
+.br
+	Return a value like any other expression, leave the semicolon (;) off.
+.br
+
+Example:
+.br
+	let value = {
+.br
+		10_i32.pow(2)
+.br
+	};
+.br
+
+	println!("value = {}", value);
+.br
+
+	// Prints: "value = 100"
+.br
+
+.B Identifiers
+.br
+( letter | unicode_letter | _ ) ( digit | letter | unicode_letter | _ )*
+.br
+
+[_a-zA-Zunicode][_0-9a-zA-Zunicode]*
+.br
+
+Description:
+.br
+	Case sensitive.
+.br
+
+	The first character must be an alphabet letter, Unicode letter, or underscore.
+.br
+	The first character can not be a digit.
+.br
+	All other characters can be alphabet letters, Unicode letters, underscores, or digits.
+.br
+	A single underscore ('_') is not allowed.
+.br
+
+Examples:
+.br
+	Valid:
+.br
+		_identifier
+.br
+		identifier
+.br
+		식별자
+.br
+		item_1
+.br
+
+	Invalid:
+.br
+		_
+.br
+		3_items
+.br
+		🎈
+.br
+
+.B Indexing
+.br
+Description:
+.br
+	Indexes are 0 based.
+
+.SH SEE ALSO
+Original Content (Requires Javascript):
+.br
+https://speedsheet.io/s/rust
+
+.SH AUTHOR
+Original Contents by Graydon Hoare
+.br
+Transcribed to Man pages by J.Leonard
