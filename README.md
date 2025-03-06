@@ -3,7 +3,7 @@ A Total Conversion of speedsheet.io's Rust SpeedSheet Into Man Files
 
 ## Installation
 1. Install the files from the GitHub repository
-2. Extract all ".7" files into /usr/local/share/man/man7/
+2. Extract all ".7" files into /usr/local/share/man/man7/ (if the directory doesn't already exist, you can create it yourself)
 3. Use either man or wikiman to view the newly installed documentation
 
 ## Recommendations
